@@ -13,10 +13,15 @@ body {
     background-color: #f4c531;
 }
 
+#result {
+    position: relative;
+}
+
 .container {
     background-color: #fff;
     padding: 3em 2.8em;
     font-size: 16px;
+    height: fit-content;
     width: 90vw;
     max-width: 32em;
     position: absolute;
@@ -40,10 +45,12 @@ body {
     border-bottom: 2px solid #202030;
     font-size: 1em;
     padding: .6em;
+    width: 100%;
 }
 
 .search-container button {
     border: none;
+    padding: 6px;
     cursor: pointer;
     background-color: #f4c531;
     border-radius: .3em;
@@ -79,7 +86,8 @@ img {
 #recipe {
     position: absolute;
     background-color: #fff;
-    min-height: 100%;
+    height: 100%;
+    overflow-y: auto;
     width: 100%;
     top: 0;
     left: 0;
@@ -112,9 +120,9 @@ img {
     font-weight: 600;
     border: none;
     border-radius: .3em;
-    position: relative;
-    left: 75%;
-    top: 1.5em;
+    position: absolute;
+    right: 10px;
+    bottom: -40px;
     background-color: #f4c531;
     padding: .9em .6em;
     cursor: pointer;
@@ -140,6 +148,9 @@ h3 {
         font-size: 14px;
         padding: 3em 1.8em;
     }
+    /* .search-container input {
+        width: 100%;
+    } */
     img {
         width: 70%;
     }
@@ -147,9 +158,9 @@ h3 {
         margin: -3.3em 0 0 0;
         padding: .3em 0;
     }
-    #show-recipe {
+    /* #show-recipe {
         padding: .6em .3em;
-        left: 70%;
-    }
+        left: 65%;
+    } */
    
 }
